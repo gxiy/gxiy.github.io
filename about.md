@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Ohh, so this is how you make a new page!
 
-### More Information
+### About this site
 
-A place to include any other types of information that you'd like to include about yourself.
+This site was made using Jekyll now. More info to be added soon.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[xiaoyaogao1@gmail.com](mailto:xiaoyaogao1@gmail.com)
