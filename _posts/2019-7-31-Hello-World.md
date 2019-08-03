@@ -3,9 +3,6 @@ layout: post
 title: Project 1
 ---
 
-This is the post for my first project. Below is a Jekyll logo
+Here's a blog post. IDK if I'm going to actually use these.
 
-![_config.yml]({{ site.baseurl }}/images/jekyll-logo.png)
 
-[Here's](https://github.com/barryclark/jekyll-now) the url for Jekyll
-now, where I took the template from GitHub.
