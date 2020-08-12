@@ -1,0 +1,97 @@
+---
+layout: project-post
+title: Useless Box
+---
+
+<div class = 'proj-img'>
+	<figure>
+		<img src = '{{ site.baseurl }}/images/ubox5.jpg' 
+	alt ='Useless Box'/>
+		<figcaption>Graveyard Useless Box</figcaption>
+	</figure>
+	<video width = "300">
+		<source src = '{{ site.baseurl }}/images/ubox6.mp4' type = 'video/mp4'>
+	</video>
+	<figure>
+		<img src = '{{ site.baseurl }}/images/ubox_final.jpg' 
+	alt ='Useless Box'/>
+		<figcaption>Arduino Useless Box</figcaption>
+	</figure>
+</div>
+
+<br>
+
+<h2>Background</h2>
+<p>
+	The useless box is a machine designed to have no practical value. 
+	Upon pressing the switch, a finger will pop from under the lid to
+	flick the switch back in protest, thus starting an endless cycle of 
+	turning on and turning back off again.
+</p>
+<p>
+	The useless box is also something I've been dying to build ever 
+	since I heard of the idea and browsed through many 
+	<a href = 'https://www.instructables.com/id/How-to-build-another-useless-machine-easy-to-make-/'>Instructables tutorials</a>
+	for inspiration. The box represents my first complete project with 
+	the Arduino, and provided me many adventures in soldering, 
+	laser cutting, and generally
+	integrating electronic and mechanical components together.	
+</p>
+
+<h2>Description</h2>
+<p>
+	Overall, the box consists of a laser cut frame with two servo-controlled
+	wooden "fingers" mounted inside. Pressing the power button near the base
+	activates the whole system and turns on the red power LED. 
+	Upon pushing the metal switch, the first finger will lift the box lid,
+	allowing the second finger to rise and push the switch back.
+</p>
+
+<p>
+	Instead of using a simple circuit, I controlled the box using an 
+	Arduino microcontroller, to customize the motions of the fingers. There
+	are around five programmed movement sequences the fingers can take every time the 
+	switch is pressed, a few of them demonstrating how exasperated they are
+	with the user disturbing their peace.
+</p>
+
+<p>
+	I initially prototyped the box using cardboard and a breadboard. The 
+	electronics were soldered to a perfboard once the circuit diagram was
+	finalized. Determining the best placement of the servo fingers to 
+	press the switch and lift the lid proved difficult, since the box
+	had limited space due to the battery pack and wires. After several 
+	iterations though, the useless box came alive!
+</p>
+
+<p>
+	After enduring a long fall semester during junior year, I 
+	picked a graveyard theme for the box and painted the fingers with a 
+	zombie-like green. I think the theme of death and irritation is relatable
+	for all engineering students, but the project itself was a really fun
+	outlet for me.
+</p>
+
+<h3 style = 'text-align:center'>Additional Photos</h3>
+<div class = 'proj-img proj-img-dump'>
+	<figure>
+		<img src = '{{ site.baseurl }}/images/ubox1.jpg' 
+	alt =''/>
+		<figcaption>Cardboard and breadboard prototype</figcaption>
+	</figure>
+	<figure>
+		<img src = '{{ site.baseurl }}/images/ubox2.jpeg' 
+	alt =''/>
+		<figcaption>Finger and switch test</figcaption>
+	</figure>
+	<figure>
+		<img src = '{{ site.baseurl }}/images/ubox3.jpg' 
+	alt =''/>
+		<figcaption>Laser cut box assembled and stained</figcaption>
+	</figure>
+	<figure>
+		<img src = '{{ site.baseurl }}/images/ubox5.jpg' 
+	alt =''/>
+		<figcaption>Front view with ominous LED</figcaption>
+	</figure>
+</div>
