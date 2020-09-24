@@ -1,0 +1,100 @@
+---
+layout: project-post
+title: Drawing Robot
+---
+
+<div class = 'proj-img'>
+	<figure>
+		<img src = '{{ site.baseurl }}/images/dtl.jpg' 
+	alt ='drawing robot'/>
+		<figcaption>Drawing Robot CAD</figcaption>
+	</figure>
+	<br>
+	<video autoplay muted width = "400" height = '400' controls>
+		<source src = '{{ site.baseurl }}/images/dtl_owl_vid.mp4' 
+				type = 'video/mp4'>
+		Sorry, your browser doesn't support embedded videos
+	</video>
+</div>
+
+<br>
+
+<h2>Background</h2>
+<p>
+	For my graduate-level Robotics class, I worked in a team of 3 students
+	to design and simulate a working drawing robot that can process and 
+	reproduce any high-contrast JPG or PNG file. Several of us on the team
+	being art enthusiasts, the robot provided a fun challenge in robotic
+	design, kinematics, and image processing.
+</p>
+
+<p>
+	The robot itself 
+	consists of a 3DOF (RRP) arm that uses two revolute joints to move a 
+	two-joint arm within a planar XY coordinate frame and a prismatic joint 
+	to move its pen onto and off of the paper within the Z axis. This robot 
+	runs using software that can process the uploaded high-contrast image 
+	and develop a drawing path for the robot consisting of continuous lines 
+	and smooth transitions between those drawn lines.
+</p>
+
+<h2>Description</h2>
+<p>
+	Beginning with design, the robot will be controlled with basic servo 
+	motors for all three joints. The end effector is a standard pen / marker 
+	positioned to be able to draw on the paper. The two revolute joints 
+	allow the robot to move its arm in a XY coordinate plane and reach all 
+	points on a standard 8.5” x 11” sheet of paper, assuming it is placed 
+	about an inch away from the middle of the long edge of the paper.
+	We created a rudimentary CAD model of the robot in SolidWorks.
+</p>
+
+<p>
+	To simulate the robot in MATLAB, we first calculated the forward and 
+	inverse kinematics for the joints to allow the robot to position 
+	its links given values of joint angles or determine the optimal joint
+	angles to reach a specific pont.
+</p>
+
+<p>
+	The simulation allows the user to input any image file for the robot 
+	to draw. The image processing code receives the image file (jpg or png), 
+	the virtual paper dimensions, and the virtual paper location, and 
+	outputs a matrix of xyz coordinates for the image path trajectory. We 
+	utilized the MATLAB image processing toolbox and conducted literature
+	reviews to determine the best image scaling algorithms.
+</p>
+
+<p>
+	Finally, I created a user-friendly GUI using MATLAB AppDesigner. The 
+	GUI allows the user to select from a pre-determined list of images,
+	or upload their own image for the robot to draw. 
+</p>
+
+<p>
+	All programs are available at 
+	<a href = "https://github.com/xiaoyaogao/drawn_to_life">GitHub</a>.
+</p>
+
+
+<h3 style = 'text-align:center'>Additional Photos</h3>
+<div class = 'proj-img proj-img-dump'>
+	<figure>
+		<img src = '{{ site.baseurl }}/images/dtl3_c.jpg' 
+	alt ='initial ideas'/>
+		<figcaption>Initial Robot Sketch</figcaption>
+	</figure>
+	
+	<figure>
+		<img src = '{{ site.baseurl }}/images/dtl4_c.jpg' 
+	alt ='workspace conversion'/>
+		<figcaption>Robot and Image Coordinates</figcaption>
+	</figure>
+	
+	<figure>
+		<img src = '{{ site.baseurl }}/images/dtl5_c.jpg' 
+	alt ='Robot Drawing Owl'/>
+		<figcaption>Owl Drawing in Action</figcaption>
+	</figure>
+</div>
+
